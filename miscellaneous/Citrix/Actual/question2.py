@@ -108,7 +108,7 @@ It is not updated when their values are 1 because 1 is less than the current max
 def updateTimes(signalOne, signalTwo):
     maxequal = None
     updated_count = 0
-    minSignal = signalOne if len(signalOne) > len(signalTwo) else signalTwo
+    minSignal = signalOne if len(signalOne) < len(signalTwo) else signalTwo
     for time_index in range(len(minSignal)):
         if signalOne[time_index] == signalTwo[time_index]:
             if maxequal is not None:

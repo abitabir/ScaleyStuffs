@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : full_adder.vf
+// /___/   /\     Timestamp : 02/05/2020 12:11:59
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath H:/Downloads/arithmetic/Src -intstyle ise -family zynq -verilog H:/Downloads/arithmetic/full_adder.vf -w "H:/Computing/Year 1/Term 2/SYS1/Lab 4/full_adder.sch"
+//Design Name: full_adder
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module half_adder_MUSER_full_adder(A, 
+                                   B, 
+                                   CARRY, 
+                                   SUM);
+
+    input A;
+    input B;
+   output CARRY;
+   output SUM;
+   
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(SUM));
+   AND2  XLXI_2 (.I0(B), 
+                .I1(A), 
+                .O(CARRY));
+endmodule
+`timescale 1ns / 1ps
+
+module full_adder(A, 
+                  B, 
+                  CIN, 
+                  COUT, 
+                  SUM);
+
+    input A;
+    input B;
+    input CIN;
+   output COUT;
+   output SUM;
+   
+   wire XLXN_13;
+   wire XLXN_15;
+   wire XLXN_17;
+   
+   half_adder_MUSER_full_adder  XLXI_1 (.A(A), 
+                                       .B(B), 
+                                       .CARRY(XLXN_17), 
+                                       .SUM(XLXN_15));
+   half_adder_MUSER_full_adder  XLXI_2 (.A(XLXN_15), 
+                                       .B(CIN), 
+                                       .CARRY(XLXN_13), 
+                                       .SUM(SUM));
+   OR2  XLXI_3 (.I0(XLXN_13), 
+               .I1(XLXN_17), 
+               .O(COUT));
+endmodule

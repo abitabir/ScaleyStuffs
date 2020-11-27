@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family zynq -w -refsym top_level {H:/Computing/Year 1/Term 2/SYS1/Lab 4/arithmetic/Src/top_level.sch} {H:/Computing/Year 1/Term 2/SYS1/Lab 4/arithmetic/top_level.sym} 

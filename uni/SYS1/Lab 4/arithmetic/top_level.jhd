@@ -1,0 +1,3 @@
+MODULE top_level
+	SUBMODULE virtual_wires
+		INSTANCE XLXI_26

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family zynq -w -refsym half_adder {H:/Computing/Year 1/Term 2/SYS1/Lab 4/half_adder.sch} H:/Downloads/arithmetic/half_adder.sym 

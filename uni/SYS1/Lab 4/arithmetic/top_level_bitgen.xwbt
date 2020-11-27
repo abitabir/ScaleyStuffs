@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\ISE\arithmetic\arithmetic\top_level.ncd
+OUTFILE=C:\ISE\arithmetic\arithmetic\top_level.bit
+FAMILY=Zynq
+PART=xc7z010-3clg400
+WORKINGDIR=C:\ISE\arithmetic\arithmetic
+LICENSE=ISE
+USER_INFO=174131719_174131720_210639042_920

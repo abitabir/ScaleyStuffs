@@ -1,0 +1,28 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o H:/Downloads/arithmetic/full_adder_tb_isim_beh.exe -prj H:/Downloads/arithmetic/full_adder_tb_beh.prj work.full_adder_tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "H:/Downloads/arithmetic/half_adder.vf" into library work
+Analyzing Verilog file "H:/Downloads/arithmetic/full_adder.vf" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "H:/Downloads/arithmetic/full_adder_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module glbl
+Compiling module XOR2
+Compiling module AND2
+Compiling module half_adder_MUSER_full_adder
+Compiling module OR2
+Compiling module full_adder
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package vl_types
+Compiling architecture behavioral of entity full_adder_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 VHDL Units
+Compiled 6 Verilog Units
+Built simulation executable H:/Downloads/arithmetic/full_adder_tb_isim_beh.exe
+Fuse Memory Usage: 32068 KB
+Fuse CPU Usage: 531 ms

@@ -1,0 +1,12 @@
+vhdtdtfi -lib work ../Virtual_Wires/virtual_wires.vhd -prj arithmetic -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/arithmetic/virtual_wires.sym 
+vhdtdtfi -lib work Src/virtual_wires.vhd -prj arithmetic -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq -w virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/arithmetic/virtual_wires.sym 
+vhdtdtfi -lib work Src/virtual_wires.vhd -prj arithmetic -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq -w virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/arithmetic/virtual_wires.sym 
+vhdtdtfi -lib work Src/virtual_wires.vhd -prj arithmetic -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq -w virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/full_adder_1/virtual_wires.sym 
+vhdtdtfi -lib work Src/virtual_wires.vhd -prj arithmetic -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq -w virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/full_adder_1/virtual_wires.sym 
+vhdtdtfi -lib work Src/virtual_wires.vhd -prj arithmetic -o virtual_wires.spl -module virtual_wires -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family zynq -w virtual_wires.spl /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/full_adder_1/virtual_wires.sym 

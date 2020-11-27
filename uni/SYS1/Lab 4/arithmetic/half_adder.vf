@@ -1,0 +1,40 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : half_adder.vf
+// /___/   /\     Timestamp : 02/05/2020 12:11:58
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -sympath H:/Downloads/arithmetic/Src -intstyle ise -family zynq -verilog H:/Downloads/arithmetic/half_adder.vf -w "H:/Computing/Year 1/Term 2/SYS1/Lab 4/half_adder.sch"
+//Design Name: half_adder
+//Device: zynq
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module half_adder(A, 
+                  B, 
+                  CARRY, 
+                  SUM);
+
+    input A;
+    input B;
+   output CARRY;
+   output SUM;
+   
+   
+   XOR2  XLXI_1 (.I0(B), 
+                .I1(A), 
+                .O(SUM));
+   AND2  XLXI_2 (.I0(B), 
+                .I1(A), 
+                .O(CARRY));
+endmodule

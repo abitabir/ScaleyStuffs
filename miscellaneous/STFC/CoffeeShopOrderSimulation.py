@@ -48,13 +48,13 @@ However, there is a catch: the previous developer wrote three classes called Bev
 # apologies for the confusion
 
 # needs much working on but eh
-
+# if your program's architecturally designed well, your program is gonna scale well - they can add more catogeries
 
 class Item:
 
-    def _init_(self):
-        self.cost = None
-        self.description = None
+    def __init__(self, cost=None, description=None):  # only specific items have costs
+        self.cost = cost
+        self.description = description
 
     def getCost(self):
         return self.cost
@@ -81,69 +81,70 @@ class Item:
 
 class Beverage(Item):
 
-    def _init_(self):
+    def __init__(self):
         self.cost = None
         self.description = "A typical beverage."
         self.extras = (DecafCoffee.getDescription() or RegularCoffee.getDescription()) in self.description
 
-    class Extra(Item):
 
-        def _init_(self):
-            self.cost = None
-            self.description = None
-            self.options = None
+class Extra(Item):
 
-        def sortingExtras(order):
-            """
-            Returns list of extras seperated by name.
-            """
-            if RegularCoffee.getDescription() in order:
-                replacing_coffee = RegularCoffee.getDescription
-            elif DecafCoffee.getDescription() in order:
-                replacing_coffee = DecafCoffee.getDescription()
-            extras_string = order.replace(replacing_coffee, "")
-            extras_list = extras_string.split(" + ")
-            return extras_list
+    def __init__(self):
+        self.cost = None
+        self.description = None
+        self.options = None
 
-        def getExtraCost(extra):
-            found_extra = None
-            if extra == Item.Extras.Milk.getDescription():
-                found_extra = Item.Extras.Milk()
-            elif extra == Item.Extras.Sugar.getDescription():
-                found_extra = Item.Extras.Sugar()
-            elif extra == Item.Extras.Cream.getDescription():
-                found_extra = Item.Extras.Cream()
-            elif extra == Item.Extras.Sprinkles.getDescription():
-                found_extra = Item.Extras.Sprinkles()
-            if found_extra is not None:
-                return found_extra.getCost()
-            else:
-                found_extra = "unknown"
-                return found_extra
+    def sortingExtras(order):
+        """
+        Returns list of extras seperated by name.
+        """
+        if RegularCoffee.getDescription() in order:
+            replacing_coffee = RegularCoffee.getDescription
+        elif DecafCoffee.getDescription() in order:
+            replacing_coffee = DecafCoffee.getDescription()
+        extras_string = order.replace(replacing_coffee, "")
+        extras_list = extras_string.split(" + ")
+        return extras_list
 
-        class Milk(Item.Extras):
+    def getExtraCost(extra):
+        found_extra = None
+        if extra == Item.Extras.Milk.getDescription():
+            found_extra = Item.Extras.Milk()
+        elif extra == Item.Extras.Sugar.getDescription():
+            found_extra = Item.Extras.Sugar()
+        elif extra == Item.Extras.Cream.getDescription():
+            found_extra = Item.Extras.Cream()
+        elif extra == Item.Extras.Sprinkles.getDescription():
+            found_extra = Item.Extras.Sprinkles()
+        if found_extra is not None:
+            return found_extra.getCost()
+        else:
+            found_extra = "unknown"
+            return found_extra
 
-            def _init_(self):
-                self.cost = float(0.53)
-                self.description = "milk"
+class Milk(Item.Extras):
 
-        class Sugar(Item.Extras):
+    def _init_(self):
+        self.cost = float(0.53)
+        self.description = "milk"
 
-            def _init_(self):
-                self.cost = float(0.17)
-                self.description = "sugar"
+class Sugar(Item.Extras):
 
-        class Cream(Item.Extras):
+    def _init_(self):
+        self.cost = float(0.17)
+        self.description = "sugar"
 
-            def _init_(self):
-                self.cost = float(0.73)
-                self.description = "cream"
+class Cream(Item.Extras):
 
-        class Sprinkles(Item.Extras):
+    def _init_(self):
+        self.cost = float(0.73)
+        self.description = "cream"
 
-            def _init_(self):
-                self.cost = float(0.29)
-                self.description = "sprinkles"
+class Sprinkles(Item.Extras):
+
+    def _init_(self):
+        self.cost = float(0.29)
+        self.description = "sprinkles"
 
 
 class RegularCoffee(Beverage):
@@ -188,7 +189,7 @@ class Panettone(Cakes):
         self.description = "panettone"
 
 
-class Orders:
+class Order:
 
     def _init_(self, orders=None):  # defaults to None if nowt inputed
         if orders is not None:
@@ -196,12 +197,12 @@ class Orders:
             self.cost = self.calculatingTotalCost(self.orders)
             self.returning = "Final bill is $" + str(self.cost)
 
-    def inputOrder(self, orders):
-        if self.order is not None:
-            self.orders = self.splittingOrders(orders)
-            self.cost = self.calculatingTotalCost(self.orders)
-            self.returning = "Final bill is $" + str(self.cost)
-        return
+    # def inputOrder(self, orders):
+    #     if self.order is not None:
+    #         self.orders = self.splittingOrders(orders)
+    #         self.cost = self.calculatingTotalCost(self.orders)
+    #         self.returning = "Final bill is $" + str(self.cost)
+    #     return
 
     def giveOutput(self, orders):
         return self.returning

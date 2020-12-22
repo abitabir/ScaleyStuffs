@@ -1,6 +1,6 @@
 import random
 import string
-import pprint_jhs.py
+import pprint_jhs
 
 def getRandomName(length = 4, exclude_list = []):
     # return a random text string of length `length`

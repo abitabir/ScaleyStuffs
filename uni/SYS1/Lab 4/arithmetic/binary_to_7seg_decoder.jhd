@@ -1,5 +1,0 @@
-MODULE binary_to_7seg_decoder
-	SUBMODULE onehot_decoder_8
-		INSTANCE XLXI_1
-	SUBMODULE seven_segment_decoder
-		INSTANCE XLXI_3

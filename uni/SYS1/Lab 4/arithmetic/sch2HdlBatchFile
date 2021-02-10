@@ -1,3 +1,0 @@
-sch2hdl,-sympath,H:/Downloads/arithmetic/Src,-intstyle,ise,-family,zynq,-verilog,H:/Downloads/arithmetic/half_adder.vf,-w,H:/Computing/Year 1/Term 2/SYS1/Lab 4/half_adder.sch
-sch2hdl,-sympath,H:/Downloads/arithmetic/Src,-intstyle,ise,-family,zynq,-verilog,H:/Downloads/arithmetic/full_adder.vf,-w,H:/Computing/Year 1/Term 2/SYS1/Lab 4/full_adder.sch
-sch2hdl,-sympath,H:/Downloads/arithmetic/Src,-intstyle,ise,-family,zynq,-verilog,H:/Downloads/arithmetic/full_adder.vf,-w,H:/Computing/Year 1/Term 2/SYS1/Lab 4/full_adder.sch

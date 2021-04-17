@@ -52,9 +52,15 @@ p1 5 6
 ```
 
 ## Function Types
-Just as data values have types, so do functions, and function types describe the type of arguments as well as type of result the function returns. 
-A function that takes an argument of type `a` and returns a result of type `b` has a function type written as `a -> b` and written as `f :: a -> b`. 
-For example, the `p1` function described above has the type `Integer -> Integer -> Integer`; meaning it takes two integers and return an integer (strictly speaking, the function takes an `Integer` and returns a _function_ of type `Integer -> Integer`).
+Just as data values have types, so do functions, and function types
+describe the type of arguments as well as type of result the function
+returns. 
+A function that takes an argument of type `a` and returns a result of 
+type `b` has a function type written as `a -> b` and written as
+`f :: a -> b`. For example, the `p1` function described above has the
+type `Integer -> Integer -> Integer`; meaning it takes two integers and
+return an integer (strictly speaking, the function takes an `Integer`
+and returns a _function_ of type `Integer -> Integer`).
 These are type declarations of some Haskell functions:
 ```haskel
 
@@ -65,7 +71,8 @@ toUpper :: Char -> Char
 
 ```
 _Note: Haskell insists that a type declaration is always accompanied by a definition._
-`[Integer]` in Haskell means a list of integers and will be discussed in another Block. We can define a function `oneto` that returns the list of integers from one to a given limit as follows:
+`[Integer]` in Haskell means a list of integers and will be discussed in another Block.
+We can define a function `oneto` that returns the list of integers from one to a given limit as follows:
 -}
 oneto :: Integer -> [Integer]
 oneto x = [1..x]
@@ -77,9 +84,18 @@ For example the result of the library function tail is undefined if the list is 
 
 ## Operators and Functions
 
-In Haskell, an _operator_ is a function with exactly two arguments written with the operator between the arguments. For example, the `+` operator takes two numbers as arguments and add them, and it is written between the numbers as `5+8`. Since an operator is a function, it has a function type. As a function, any operator can be converted into a curried function by enclosing the operator in parentheses before its arguments, as in `(*) 4 5` to give `20`. When an operator is used by itself, for example to state its type, it must be enclosed in parentheses like:
+In Haskell, an _operator_ is a function with exactly two arguments written with the operator
+between the arguments. For example, the `+` operator takes two numbers as arguments and add them,
+and it is written between the numbers as `5+8`. Since an operator is a function, it has a function
+type. As a function, any operator can be converted into a curried function by enclosing the operator
+in parentheses before its arguments, as in `(*) 4 5` to give `20`. When an operator is used by itself,
+for example to state its type, it must be enclosed in parentheses like:
 ```haskell
 (*) :: Integer -> Integer -> Integer
+{
+*FuncDef> :t (+)
+(+) :: Num a => a -> a -> a  -- they simplified it to Integer but Integer is a child class of Num ig
+}
 (||) :: Bool -> Bool -> Bool
 ```
 
@@ -120,12 +136,12 @@ The type declaration has the form:
 ```haskell
 nameOfFunction :: argumenmtType1 -> ... -> argumenmtTypeN -> resultType
 ```
-
 and the defining equation has the form:
 
 ```haskell
 nameOfFunction argumenmt1 argumenmt2 ... argumenmtN = expression in terms of the arguments
 ```
+{not all of the arguements have to appear in the expression}
 _It is quite hard to state, but things can be more general than this._
 
 Even though functions can be written directly in `ghci`, it’s not a good environment for doing so. It
@@ -153,6 +169,7 @@ squares num = num * num
 
 {-
 If the argument in that application is a name (e.g. _num_ in the defining equation `squares num = num * num`), then when an application is evaluated, the name will take on the argument value, and the right-hand side of the function is evaluated. What happens when the argument on the left-hand side is a constant? If the argument on the left-hand side is a constant, then the right-hand side will be used only if the function is applied to that value. In Haskell, a function can be defined with several defining equations to have simple and more readable code. For example, the definition of the function `inWords` has four defining equations, each with a constant argument to return the English spelling of the numeric value:
+{quite like Java case}
 -}
 
 inWords :: Integer -> String
@@ -195,6 +212,7 @@ The function `is_four` has two defining equations, if the argument pattern `4` i
 A function may have more than one argument. If this is the case, then
 each argument in a given defining equation is checked, from left to right. For example, here is the `conjunction` function, which returns `True` if and only if both of the
 arguments are `True`:
+{boolean and}
 -}
 
 conjunction :: Bool -> Bool -> Bool
@@ -243,12 +261,13 @@ In both `add2DVec` and `add2DVec'` functions, there is only one pattern (definin
 
 An argument pattern may also be a list. Since a list is either `[]` or else it
 is constructed with the _cons_ (list construction) `:` operator, the patterns take the forms [] and
-x:xs. For example, the following function determines whether a list is empty:
+x:xs {where the s in xs denotes the pluralistic remaining number of elements - Haskell convention}.
+For example, the following function determines whether a list is empty:
 -}
 
 isEmpty :: [a] -> Bool
 isEmpty    []  =  True
-isEmpty (x:xs) = False
+isEmpty (x:xs) = False  -- x:xs can be anything else - no need to constrain to list cuz of the type decleration in the first :: containing linr
 
 {-
 An alternative to `isEmpty` can be defined as follows, to show how wildcard pattern `_` can be used here as well:
@@ -267,7 +286,7 @@ equation is tried. Here the match succeeds, with `x` defined as `1` and `xs`
 defined as `2:3:[]`, and `False` is returned. It makes no difference if the argument
 is written with the simpler syntax `[1,2,3]`; this is merely an abbreviation (or syntactic sugar)
 for `1:2:3:[]`, so the evaluation is identical.
-
+{s is added to end of a name, convention in Haskell}
 The following is an implementation of the head function using pattern matching against lists:
 -}
 

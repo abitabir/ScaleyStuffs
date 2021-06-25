@@ -1,0 +1,3 @@
+The minimum precipitation from the data in precipitations-Europe.txt is 539.24 in the year of 1921.
+The maximum precipitation from the data in precipitations-Europe.txt is 539.24 in the year of 1921.
+The average precipitation from the data in precipitations-Europe.txt is 694.72.

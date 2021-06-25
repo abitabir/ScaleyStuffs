@@ -1,0 +1,26 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!--element declaration dtd-->
+<!--internal DTD resides within XML elements and is specific to the corresponding XML document only-->
+<!DOCTYPE York_University [
+<!ELEMENT York_University (department*)>
+<!ATTLIST department name CDATA #REQUIRED>
+<!ELEMENT department (location, num_of_students)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT num_of_students (#PCDATA)>
+]>
+<!--if we used an external DTD we would insert this syntax (SYSTEM denotes private external DTD)-->
+<!--<!DOCTYPE rootElement SYSTEM path_to_dtd_filename.dtd”>-->
+
+<!--xml document-->
+
+<York_University>
+    <department name="CS">
+        <location>East Campus</location>
+        <num_of_student>2000</num_of_student>
+    </department>
+    <department name="PE">
+        <location>West Campus</location>
+        <num_of_student>1000</num_of_student>
+    </department>
+</York_University>

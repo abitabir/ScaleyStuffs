@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!--The following contains information about two specific cars ~ ahem, let us begiiiin-->
+
+<cars>
+    <car>
+        <make>bmw</make>
+        <model>6 series</model>
+        <colour>blue</colour>
+        <mileage>mileage&lt;10000</mileage>  <!--remember < is a special character symbol in xml so &lt; used in replacement-->
+    </car>
+
+    <car>
+        <make>merc</make>
+        <model>CLA</model>
+        <colour>grey</colour>  <!-- yaaaaaaaaaaaaaas boi my dear greyeyeyey -->
+        <mileage>mileage&lt;15000</mileage>
+
+    </car>
+
+</cars>

@@ -1,0 +1,8 @@
+<!--element declaration dtd-->
+<!--root element is York_University {Canada? noooo imposters T.T XP}-->
+<!ELEMENT York_University (department*)>  <!--* means 0 or many - like in Theory-->
+<!ATTLIST department name CDATA #REQUIRED> <!--ATTLIST defines an attribute for an ELEMENT-->  <!--CDATA means character data i.e text-->  <!--#REQUIRED means the attribute must exist {kinda like NOT NULL in SQL I assume}-->
+<!ELEMENT department (location, num_of_students)> <!--decalring an element called department -  an element which allows children hmmm-->
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT num_of_students (#PCDATA)>
+<!--#PCDATA is an element that may only contain Parsed Character Data, but must not contain any child elements-->

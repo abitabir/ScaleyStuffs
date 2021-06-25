@@ -1,0 +1,10 @@
+<York_University>
+    <department name="CS">
+        <Location>East Campus</Location>
+        <num_of_students>2000</num_of_students>
+    </department>
+    <department name="PE">
+        <Location>West Campus</Location>
+        <num_of_students>1000</num_of_students>
+    </department>
+</York_University>

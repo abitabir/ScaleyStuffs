@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family zynq -refsym binary_to_7seg_decoder /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/arithmetic/Src/binary_to_7seg_decoder.sch /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/arithmetic/binary_to_7seg_decoder.sym 
+sch2sym -intstyle ise -family zynq -w -refsym binary_to_7seg_decoder /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/arithmetic/Src/binary_to_7seg_decoder.sch /home/mike/Documents/SYS1/Labs/LAB_04_arithmatic/VHDL/arithmetic/binary_to_7seg_decoder.sym 

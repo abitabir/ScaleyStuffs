@@ -1,0 +1,48 @@
+
+{
+
+  "student": [{
+    "id":  1234,
+    "name":  "JS",
+    "age": 23
+  }, {
+    "id":  2233,
+    "name":  "PK",
+    "age": 20
+  }, {
+    "id":  2468,
+    "name":  "MN",
+    "age": 19
+  }],
+
+  "lecturer": [{
+      "lno": 101,
+      "name": "SG",
+      "room": 106
+    }, {
+      "lno": 103,
+      "name": "KP",
+      "room": 218
+    }, {
+      "lno": 106,
+      "name": "KS",
+      "room": 156
+    }],
+
+  "department": {
+    "id": "CS101",
+    "name": "Computer Science",
+    "location": "East Campus"
+  },
+
+  "module": {
+    "module1": "INT1",
+    "module2": "DAT2",
+    "module3": "HCI2"
+  },
+
+  "rank": 20,
+
+  "russel group": true
+
+}

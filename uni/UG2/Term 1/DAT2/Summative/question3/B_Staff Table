@@ -1,0 +1,9 @@
+INSERT INTO B_Staff (staffNo, name, position, salary, dCenterNo)
+VALUES
+("S0003", "Sally Adams", "Snr Assistant", "30000", "B001"),
+("S0010", "Mary Martinez", "Manager", "50000", "B002"),
+("S0415", "Art Peters", "Manager", "41000", "B003"),
+("S1500", "Tom Daniels", "Manager", "46000", "B001"),
+("S2250", "Sally Stern", "Manager", "48000", "B004"),
+("S2350", "Robert Chin", "Supervisor", "32000", "B002");
+COMMIT;

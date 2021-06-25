@@ -1,0 +1,10 @@
+INSERT INTO D_DVD Table (catalogNo, title, genre, rating, supplierNo)
+VALUES
+
+("207132", "Casino Royale", "Action", "PG-13", "S02"),
+("330553", "Lord of the Rings III", "Action", "PG-13", "S04"),
+("445624", "Mission Impossible III", "Action", "PG-13", "S03"),
+("634817", "War of the Worlds", "Sci-Fi", "PG-13", "S05"),
+("781132", "Shrek 2", "Children", "PG", "S03"),
+("902355", "Harry Potter", "Children", "PG", "S01");
+COMMIT;

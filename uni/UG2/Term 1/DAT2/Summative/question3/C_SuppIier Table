@@ -1,0 +1,8 @@
+INSERT INTO C_Supplier (supplierNo, name, address, telNo, status)
+VALUES
+("S01", "Universal Home Videos", "100 Universal City Plaza", "8188666000", "OK"),
+("S02", "MGM Home Videos", "2500 Broadway St, Santa Monica, CA, 90404", "8189002000", "OK"),
+("S03", "Buena Vista Pictures", "1100 Santa Monica Bivid, CA, 90041", "3208406500", "OK"),
+("S04", "Paramount Pictures", "5555 Melrose Avenue, Hollywood, CA, 90038", "3238621130", "OK"),
+("S05", "20th Century Fox Home Video", "900 Center Plaza, Beverly Hills, CA, 90213", "6007772300", "OK");
+COMMIT;

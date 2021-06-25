@@ -1,0 +1,13 @@
+# this is an example input file for the SAT solver
+# run the SAT solver by using a command such as:
+#  python3 path/to/simple-sat/src/sat.py -v --input example.in
+
+# CNF:
+# at least one of a,b,c must be true:
+a b c
+
+# a or not b:
+a ~b
+
+# not b or c:
+~b c

@@ -1,0 +1,166 @@
+# Pixeldale!
+
+# can we do it with two colours?
+# A B C D E F G H I J
+# A <=> (¬B /\ ¬C /\ ¬D)
+# but waiii sooo much tedious effort sigh
+# just look at the solutions and copy them and understand them, yup
+# remember everything has been converted to CNF
+
+# start with 4 colours, red blue green yellow.
+# every castle needs a colour:
+RA BA GA YA
+RB BB GB YB
+RC BC GC YC
+RD BD GD YD
+RE BE GE YE
+RF BF GF YF
+RG BG GG YG
+RH BH GH YH
+RI BI GI YI
+RJ BJ GJ YJ
+
+# no castle can have more than one colour:
+~RA ~BA
+~RA ~GA
+~RA ~YA
+~BA ~GA
+~BA ~YA
+~GA ~YA
+
+~RB ~BB
+~RB ~GB
+~RB ~YB
+~BB ~GB
+~BB ~YB
+~GB ~YB
+
+~RC ~BC
+~RC ~GC
+~RC ~YC
+~BC ~GC
+~BC ~YC
+~GC ~YC
+
+~RD ~BD
+~RD ~GD
+~RD ~YD
+~BD ~GD
+~BD ~YD
+~GD ~YD
+
+~RE ~BE
+~RE ~GE
+~RE ~YE
+~BE ~GE
+~BE ~YE
+~GE ~YE
+
+~RF ~BF
+~RF ~GF
+~RF ~YF
+~BF ~GF
+~BF ~YF
+~GF ~YF
+
+~RG ~BG
+~RG ~GG
+~RG ~YG
+~BG ~GG
+~BG ~YG
+~GG ~YG
+
+~RH ~BH
+~RH ~GH
+~RH ~YH
+~BH ~GH
+~BH ~YH
+~GH ~YH
+
+~RI ~BI
+~RI ~GI
+~RI ~YI
+~BI ~GI
+~BI ~YI
+~GI ~YI
+
+~RJ ~BJ
+~RJ ~GJ
+~RJ ~YJ
+~BJ ~GJ
+~BJ ~YJ
+~GJ ~YJ
+
+# implement neighbours
+~RA ~RB
+~BA ~BB
+~GA ~GB
+~YA ~YB
+
+~RA ~RC
+~BA ~BC
+~GA ~GC
+~YA ~YC
+
+~RA ~RD
+~BA ~BD
+~GA ~GD
+~YA ~YD
+
+~RB ~RF
+~BB ~BF
+~GB ~GF
+~YB ~YF
+
+~RC ~RE
+~BC ~BE
+~GC ~GE
+~YC ~YE
+
+~RD ~RE
+~BD ~BE
+~GD ~GE
+~YD ~YE
+
+~RD ~RF
+~BD ~BF
+~GD ~GF
+~YD ~YF
+
+~RE ~RG
+~BE ~BG
+~GE ~GG
+~YE ~YG
+
+~RE ~RH
+~BE ~BH
+~GE ~GH
+~YE ~YH
+
+~RF ~RI
+~BF ~BI
+~GF ~GI
+~YF ~YI
+
+~RG ~RH
+~BG ~BH
+~GG ~GH
+~YG ~YH
+
+~RG ~RJ
+~BG ~BJ
+~GG ~GJ
+~YG ~YJ
+
+~RH ~RJ
+~BH ~BJ
+~GH ~GJ
+~YH ~YJ
+
+~RI ~RJ
+~BI ~BJ
+~GI ~GJ
+~YI ~YJ
+
+
+

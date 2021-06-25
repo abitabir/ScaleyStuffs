@@ -1,0 +1,24 @@
+# SAT solving (a <=> b) /\ (¬b \/ ¬a)
+# first convert to CNF
+# (a => b) /\ (b => a) /\ (¬b \/ ¬a)
+# (¬a \/ b) /\ (¬b \/ a) /\ (¬b \/ ¬a)
+# Conjunctive Normal Form {conjunctions of disjunctions}:
+
+#~a b  # ¬a \/ b
+# /\
+#~b a  # ¬b \/ a
+# /\
+#~b ~a
+
+# note: don't have incode comments else messes up the SAT solver
+
+~a b
+~b a
+~b ~a
+
+# in cmd:
+#C:\projects\ScaleyStuffs\uni\INT1\Practical7>python SimpleSAT\simple-sat-master\src\sat.py -v --input question3.in
+#Trying a = 0
+#Trying b = 0
+#Found satisfying assignment #1:
+#~a ~b

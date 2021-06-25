@@ -1,0 +1,64 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<!DOCTYPE Students_And_Grades [
+<!ELEMENT Students_And_Grades (student_and_grade*)>
+        <!ELEMENT student_and_grade (id, student, maths, english, it)>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT student (#PCDATA)>
+        <!ELEMENT maths (test)>
+        <!ELEMENT test (#PCDATA)>
+        <!ELEMENT english (essay)>
+        <!ELEMENT essay (#PCDATA)>
+        <!ELEMENT it (activity_1, test_2)>
+        <!ELEMENT activity_1 (#PCDATA)>
+        <!ELEMENT test_2 (#PCDATA)>
+
+]>
+
+<Students_And_Grades>
+    <student_and_grade>
+        <id>1643022</id>
+        <student>Pace,Camden G</student>
+        <maths>
+            <test>54%</test>
+        </maths>
+        <english>
+            <essay>C+</essay>
+        </english>
+        <it>
+            <activity_1>Pass</activity_1>
+            <test_2>32%</test_2>
+        </it>
+    </student_and_grade>
+
+    <student_and_grade>
+        <id>1647021</id>
+        <student>Weber, Lucy X</student>
+        <maths>
+            <test>32%</test>
+        </maths>
+        <english>
+            <essay>C-</essay>
+        </english>
+        <it>
+            <activity_1>Fail</activity_1>
+            <test_2>73%</test_2>
+        </it>
+    </student_and_grade>
+
+    <student_and_grade>
+        <id>1606023</id>
+        <student>Branch, Caesar A.</student>
+        <maths>
+            <test>73%</test>
+        </maths>
+        <english>
+            <essay>C-</essay>
+        </english>
+        <it>
+            <activity_1>Pass</activity_1>
+            <test_2>63%</test_2>
+        </it>
+    </student_and_grade>
+
+</Students_And_Grades>

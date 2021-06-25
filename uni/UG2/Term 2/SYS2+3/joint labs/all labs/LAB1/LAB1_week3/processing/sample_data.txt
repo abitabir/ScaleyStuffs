@@ -1,0 +1,120 @@
+ MatrixSize	10
+ program	8.1e-05s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	20
+ program	0.000342s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	30
+ program	0.001203s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	40
+ program	0.002677s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	50
+ program	0.004825s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	60
+ program	0.008091s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	70
+ program	0.014485s        0.01 real         0.01 user         0.00 sys
+ MatrixSize	80
+ program	0.024001s        0.02 real         0.02 user         0.00 sys
+ MatrixSize	90
+ program	0.03719s        0.03 real         0.03 user         0.00 sys
+ MatrixSize	100
+ program	0.05504s        0.05 real         0.05 user         0.00 sys
+ MatrixSize	110
+ program	0.077477s        0.07 real         0.07 user         0.00 sys
+ MatrixSize	120
+ program	0.103926s        0.10 real         0.10 user         0.00 sys
+ MatrixSize	130
+ program	0.158121s        0.16 real         0.15 user         0.00 sys
+ MatrixSize	140
+ program	0.215177s        0.21 real         0.21 user         0.00 sys
+ MatrixSize	150
+ program	0.285263s        0.29 real         0.28 user         0.00 sys
+ MatrixSize	160
+ program	0.369109s        0.37 real         0.36 user         0.00 sys
+ MatrixSize	170
+ program	0.495026s        0.50 real         0.49 user         0.00 sys
+ MatrixSize	180
+ program	0.581121s        0.58 real         0.57 user         0.00 sys
+ MatrixSize	190
+ program	0.687975s        0.69 real         0.68 user         0.00 sys
+ MatrixSize	200
+ program	0.835503s        0.83 real         0.83 user         0.00 sys
+ MatrixSize	210
+ program	1.00297s        1.00 real         1.00 user         0.00 sys
+ MatrixSize	220
+ program	1.23115s        1.23 real         1.22 user         0.00 sys
+ MatrixSize	230
+ program	1.50787s        1.51 real         1.50 user         0.00 sys
+ MatrixSize	240
+ program	1.70404s        1.70 real         1.70 user         0.00 sys
+ MatrixSize	250
+ program	1.97196s        1.97 real         1.97 user         0.00 sys
+ MatrixSize	260
+ program	2.47298s        2.48 real         2.46 user         0.00 sys
+ MatrixSize	270
+ program	2.93308s        2.95 real         2.92 user         0.01 sys
+ MatrixSize	280
+ program	3.32422s        3.34 real         3.31 user         0.00 sys
+ MatrixSize	290
+ program	3.77829s        3.78 real         3.77 user         0.00 sys
+ MatrixSize	300
+ program	4.3205s        4.33 real         4.31 user         0.00 sys
+ MatrixSize	10
+ program	9.9e-05s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	20
+ program	0.000296s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	30
+ program	0.000993s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	40
+ program	0.00243s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	50
+ program	0.004891s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	60
+ program	0.008111s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	70
+ program	0.015892s        0.01 real         0.01 user         0.00 sys
+ MatrixSize	80
+ program	0.024294s        0.02 real         0.02 user         0.00 sys
+ MatrixSize	90
+ program	0.038425s        0.04 real         0.03 user         0.00 sys
+ MatrixSize	100
+ program	0.057116s        0.05 real         0.05 user         0.00 sys
+ MatrixSize	110
+ program	0.08041s        0.08 real         0.08 user         0.00 sys
+ MatrixSize	120
+ program	0.114522s        0.11 real         0.11 user         0.00 sys
+ MatrixSize	130
+ program	0.160482s        0.16 real         0.16 user         0.00 sys
+ MatrixSize	140
+ program	0.211222s        0.21 real         0.21 user         0.00 sys
+ MatrixSize	150
+ program	0.274807s        0.27 real         0.27 user         0.00 sys
+ MatrixSize	160
+ program	0.346617s        0.34 real         0.34 user         0.00 sys
+ MatrixSize	170
+ program	0.432408s        0.43 real         0.43 user         0.00 sys
+ MatrixSize	180
+ program	0.546436s        0.55 real         0.54 user         0.00 sys
+ MatrixSize	190
+ program	0.69466s        0.69 real         0.69 user         0.00 sys
+ MatrixSize	200
+ program	0.829166s        0.83 real         0.82 user         0.00 sys
+ MatrixSize	210
+ program	1.00571s        1.00 real         1.00 user         0.00 sys
+ MatrixSize	220
+ program	1.19265s        1.19 real         1.19 user         0.00 sys
+ MatrixSize	230
+ program	1.42828s        1.43 real         1.42 user         0.00 sys
+ MatrixSize	240
+ program	1.69407s        1.69 real         1.69 user         0.00 sys
+ MatrixSize	250
+ program	1.96836s        1.97 real         1.96 user         0.00 sys
+ MatrixSize	260
+ program	2.20726s        2.20 real         2.20 user         0.00 sys
+ MatrixSize	270
+ program	2.58149s        2.58 real         2.58 user         0.00 sys
+ MatrixSize	280
+ program	3.01905s        3.02 real         3.01 user         0.00 sys
+ MatrixSize	290
+ program	3.55109s        3.55 real         3.55 user         0.00 sys
+ MatrixSize	300
+ program	4.10132s        4.10 real         4.10 user         0.00 sys

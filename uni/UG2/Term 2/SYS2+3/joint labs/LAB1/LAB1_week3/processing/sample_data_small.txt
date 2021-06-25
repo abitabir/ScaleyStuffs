@@ -1,0 +1,10 @@
+ MatrixSize	10
+ program	0.000102s        0.25 real         0.00 user         0.00 sys
+ MatrixSize	20
+ program	0.000366s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	30
+ program	0.001317s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	40
+ program	0.00359s        0.00 real         0.00 user         0.00 sys
+ MatrixSize	50
+ program	0.00816s        0.01 real         0.00 user         0.00 sys
